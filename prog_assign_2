@@ -1,0 +1,17 @@
+# This code calculates the distance a car travels after 6, 10, and 15 hours.
+
+class Car:
+    def __init__(self, speed):
+        self.speed = speed
+        self.get_distance = lambda speed, time: speed * time
+
+car1 = Car(int(70)) # Speed in miles per hour
+time = [int(6), int(10), int(15)] # Time in hours
+
+distance_1 = car1.get_distance(car1.speed, time[0])
+distance_2 = car1.get_distance(car1.speed, time[1])
+distance_3 = car1.get_distance(car1.speed, time[2])
+
+print(f"In 6 hours, the car will travel {distance_1} miles.")
+print(f"In 10 hours, the car will travel {distance_2} miles.")
+print(f"In 15 hours, the car will travel {distance_3} miles.")
