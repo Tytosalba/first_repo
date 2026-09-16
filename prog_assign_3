@@ -1,0 +1,19 @@
+# This code tells the day of the week based on numerical input from the user.
+
+day = int(input("Enter a number between 1 and 7 based on the current weekday: "))
+if day == 1:
+    print("It is Monday.")
+elif day == 2:
+    print("It is Tuesday.")
+elif day == 3:
+    print("It is Wednesday.")
+elif day == 4:
+    print("It is Thursday.")
+elif day == 5:
+    print("It is Friday.")
+elif day == 6:
+    print("It is Saturday.")
+elif day == 7:
+    print("It is Sunday.")
+else:
+    print("Invalid input. Please enter a number between 1 and 7.")
